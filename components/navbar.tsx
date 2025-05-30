@@ -5,6 +5,14 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import {
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
+
 import { useState } from "react";
 
 const routes = [
@@ -22,7 +30,7 @@ const routes = [
   },
   {
     name: "Contact",
-    path: "/#contact",
+    path: "/Contact",
   },
 ];
 
@@ -65,9 +73,18 @@ export function Navbar() {
               {route.name}
             </Link>
           ))}
-          <Buttons white href="" className="text-black rounded-full bg-white">
-            Resume
-          </Buttons>
+          <div className="flex gap-2">
+            <SignedOut>
+              <Button variant="default" size="sm" className="text-black rounded-full bg-white">
+                <SignInButton />
+              </Button>
+            </SignedOut>
+            <SignedIn>
+              <Button variant="default" size="sm" className="text-black rounded-full bg-white">
+                <UserButton />
+              </Button>
+            </SignedIn>
+          </div>
         </nav>
 
         {/* Mobile navigation */}

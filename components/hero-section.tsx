@@ -9,8 +9,8 @@ import Typewriter from "typewriter-effect";
 
 export function HeroSection() {
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden bg-background">
-      <div className="container px-4 mx-auto relative z-10">
+    <section className="relative py-20 md:py-32 overflow-hidden">
+      <div className="container px-4 mx-auto relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -18,10 +18,10 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              I am
+              I am a
               <Typewriter
               options={{
-                strings: ["Web Developer","UI/UX Designer","Next.js Developer"],
+                strings: ["Web Developer","UI/UX Designer","Next.js Developer","Agentic AI Enthusiast"],
                 autoStart: true,
                 loop: true,
               }}
@@ -30,31 +30,33 @@ export function HeroSection() {
             <p className="text-xl text-muted-foreground mb-8 max-w-md">
               I build exceptional digital experiences with modern web technologies, focusing on performance, accessibility, and beautiful design.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Buttons href="#projects" className="" >
-                <span className="flex items-center gap-2 ">
-                View Projects <ArrowRight className="ml-23 rounded-full h-4 w-4" />                                
+            <div  className="flex items-center flex-wrap gap-4">
+              <Buttons className="flex items-center" href="#projects" >
+                <span  className="flex items-center gap-2 " > 
+                View Projects <ArrowRight className="ml-23 rounded-full h-5 w-5" />                                
                 </span>
               </Buttons>
-              <Buttons href="" white className="text-black rounded-full bg-white">
+              <Buttons href="" white className="font-semibold text-black rounded-full bg-white">
+                <Link href="/Contact">
                 Contact Me
+                </Link>
               </Buttons>
             </div>
             <div className="flex gap-4 mt-8">
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://github.com/Saeef1" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/Saeef1" className="z-20" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://www.linkedin.com/in/muhammad-saeef-96781928a/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/in/muhammad-saeef-96781928a/" className="z-20" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="mailto:muhammadsaeef045@gmail.com">
+                <Link href="mailto:muhammadsaeef045@gmail.com" className="z-20">
                   <Mail className="h-5 w-5" />
                   <span className="sr-only">Email</span>
                 </Link>

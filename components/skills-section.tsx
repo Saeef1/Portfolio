@@ -97,7 +97,7 @@ export function SkillsSection() {
           ))}
         </div>
         <div className="relative h-[1.4rem] aspect-[33/40] w-full">
-          <div className="grid grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 gap-8 ">
             {skillCategories
               .filter((category) => category.name === activeCategory)
               .map((category) => (
@@ -112,7 +112,7 @@ export function SkillsSection() {
                         {category.name} Skills
                       </h3>
                     </div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 ">
                       {category.skills.map((skill, index) => (
                         <motion.div
                           key={skill}
@@ -122,7 +122,7 @@ export function SkillsSection() {
                         >
                           <Badge
                             variant="secondary"
-                            className="px-3 py-1 text-sm"
+                            className="px-3 py-1 text-sm "
                           >
                             {skill}
                           </Badge>
@@ -133,7 +133,7 @@ export function SkillsSection() {
                 </Card>
               ))}
             <ScrollParallax isAbsolutelyPositioned>
-              <div className=" relative md:mb-20">
+              <div className=" relative ">
                 <BackgroundCircles parallaxRef={parallaxRef} />
               </div>
             </ScrollParallax>
