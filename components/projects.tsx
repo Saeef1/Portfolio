@@ -24,7 +24,7 @@ const Projects = () => {
                       />
                     </span>
                   </h2>
-          <div className="flex flex-wrap gap-10 mb-10">
+          <div className="flex autoShow flex-wrap gap-10 mb-10">
             {gitProjects.map((Projects) => (
               <>
                 <div

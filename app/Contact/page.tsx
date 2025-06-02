@@ -19,7 +19,8 @@ interface ContactSubmission extends ContactFormData {
 const Contact = () => {
   const textName: string = "leading-7 text-sm text-white"
   const inputBox: string = "w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-  
+  const email : string = process.env.GMAIL || "not found"
+
   // Form state
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
@@ -187,7 +188,7 @@ const Contact = () => {
               </div>
 
                               {/* Status Messages */}
-              {user?.primaryEmailAddress?.emailAddress === "muhammadsaeef045@gmail.com" && submitStatus === 'success' && (
+              {user?.primaryEmailAddress?.emailAddress === email && submitStatus === 'success' && (
                 <div className="p-2 w-full text-center text-green-500">
                   Thank you for your message! We'll get back to you soon.
                 </div>

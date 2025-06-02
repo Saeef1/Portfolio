@@ -80,3 +80,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3)  ;
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1)  ;
+            
+    }
+}
+.autoShow{
+    animation: autoShowAnimation;
+    animation-timeline: view(75% 5%);
+}
