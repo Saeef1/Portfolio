@@ -133,7 +133,7 @@ export function SkillsSection() {
                 </Card>
               ))}
             <ScrollParallax isAbsolutelyPositioned>
-              <div className=" relative ">
+              <div className="hidden md:block relative ">
                 <BackgroundCircles parallaxRef={parallaxRef} />
               </div>
             </ScrollParallax>
