@@ -51,6 +51,7 @@ const Projects = () => {
                     </div>
                     <Link
                       href={Projects.url}
+                      target="_blank"
                       className="text-primary hover:text-red-600 mt-auto"
                     >
                       Github

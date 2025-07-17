@@ -138,4 +138,13 @@ export const gitProjects: Project[] = [
     card: card2.src,
     url: "https://growth-mind-jpvn9tkxjn73zqc8pseqtk.streamlit.app/",
   },
+  {
+    name : "Restraunt Website",
+    id: "restraunt-website",
+    description:
+      "A responsive restaurant website built with Next.js, featuring menu items,Admin dashboard, reservations, and contact information.",
+    tag: ["Next.js", "Restaurant", "Responsive Design", "Side Project"],
+    card: card3.src,
+    url: "https://github.com/Saeef1/restraunt"
+  }
 ];
