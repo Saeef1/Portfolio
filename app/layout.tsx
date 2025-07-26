@@ -10,7 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Muhammad Saeef Portfolio',
   description: 'A showcase of my Next.js skills and projects',
-};
+  verification: {
+    google: '85tj4GfcBCMItqW5s_6jxhvb8txI5lglxw7ia2CJ2yw',
+  }};
 
 export default function RootLayout({
   children,
