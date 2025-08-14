@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Muhammad Saeef | Web Developer Portfolio',
     description: 'Explore the projects and skills of Muhammad Saeef, a passionate web developer and designer.',
-    url: 'https://portfolio-nine-lemon-48.vercel.app',
+    url: 'https://muhammad-saeef.vercel.app/',
     siteName: 'Muhammad Saeef Portfolio',
     locale: 'en_US',
     type: 'website',
