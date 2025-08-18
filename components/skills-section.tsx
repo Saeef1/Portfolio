@@ -28,28 +28,35 @@ const skillCategories = [
   {
     name: "Backend",
     icon: <Server className="h-6 w-6" />,
-    skills: ["Node.js", "APIs", "GraphQL", "Authentication", "Authorization"],
+    skills: ["Node.js", "APIs", "Authentication", "Authorization", "MongoDB"],
   },
+  {
+    name: "AI & Automation",
+    icon: <Code2 className="h-6 w-6" />,
+    skills: [
+      "OpenAI SDK", "Gemini SDK", "Agentic AI apps", "Streamlit", "Chainlit",
+    ]
+  }
+  ,
   {
     name: "Development",
     icon: <Code2 className="h-6 w-6" />,
-    skills: ["Git", "GitHub", "Testing", "Performance Optimization", "SEO"],
+    skills: ["Git", "GitHub", "Performance Optimization", "SEO"],
   },
   {
-    name: "Architecture",
-    icon: <Layers className="h-6 w-6" />,
-    skills: [
-      "Microservices",
-      "Serverless",
-      "API Design",
-      "System Design",
-      "Performance Optimization",
-    ],
-  },
+  name: "Architecture & APIs",
+  icon: <Layers className="h-6 w-6" />,
+  skills: [
+    "REST API Design",
+    "Database Design (MongoDB)",
+    "Reusable Components",
+    "Scalable Frontend Architecture",
+  ],
+},
   {
-    name: "DevOps",
+    name: "DevOps & Hosting",
     icon: <Workflow className="h-6 w-6" />,
-    skills: [, "Vercel"],
+    skills: ["Railway", "Vercel","Cloudinary"]
   },
 ];
 
