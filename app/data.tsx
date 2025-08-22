@@ -12,6 +12,7 @@ interface Project {
   tag: string[];
   card: string;
   url: string;
+  deployUrl?: string;
 }
 interface IQualification {
   id: string;
@@ -54,6 +55,17 @@ export const gitProjects: Project[] = [
     tag: ["Side Project", "Next.js", "portfolio"],
     card: card.src,
     url: "https://github.com/Saeef1/Portfolio",
+    deployUrl: "https://muhammad-saeef.vercel.app/",
+  },
+  {
+    name : "Restraunt Website",
+    id: "restraunt-website",
+    description:
+      "A responsive restaurant website built with Next.js, featuring menu items,Admin dashboard, reservations, and contact information.",
+    tag: ["Next.js", "Restaurant", "Responsive Design", "Side Project"],
+    card: card3.src,
+    url: "https://github.com/Saeef1/restraunt",
+    deployUrl: "https://restraunt-xi.vercel.app/",
   },
   {
     name: "E-commerce responsive website",
@@ -63,6 +75,7 @@ export const gitProjects: Project[] = [
     tag: ["Side Project", "Next.js", "E-commerce", "Responsive Design"],
     card: card2.src,
     url: "https://github.com/Saeef1/Assignment-4-responsive-eCommerce-",
+    deployUrl: "https://assignment-4-responsive-e-commerce.vercel.app/",
   },
   {
     id: "ecommerce-platform",
@@ -79,6 +92,7 @@ export const gitProjects: Project[] = [
     ],
     card: card3.src,
     url: "https://github.com/Saeef1/Hackathon-2",
+    deployUrl: "https://hackathon-2-o4it.vercel.app/",
   },
   {
     id: "45-typescript-assignments",
@@ -100,10 +114,12 @@ export const gitProjects: Project[] = [
       "Streamlit",
       "Data Protection",
       "python",
+      "Growth Mind Project",
       "Assignment",
     ],
     card: card5.src,
-    url: "https://growth-mind-hfriv.streamlit.app/",
+    url: "http://github.com/saeef1/growth-mind/blob/main/secure_data_encryption/main.py",
+    deployUrl: "https://growth-mind-hfriv.streamlit.app/",
   },
   {
     id: "mood-tracker",
@@ -112,7 +128,8 @@ export const gitProjects: Project[] = [
       "A mood tracker application that allows users to log and analyze their moods over time.",
     tag: ["Python", "Mood Tracker", "Streamlit", "Mental Health", "Assignment"],
     card: card6.src,
-    url: "https://growth-mind-olsyuqzynyton8uze.streamlit.app/",
+    url: "https://github.com/saeef1/growth-mind/blob/main/mood-track/main.py",
+    deployUrl: "https://growth-mind-olsyuqzynyton8uze.streamlit.app/",
   },
   {
     name: "Password Generator",
@@ -127,7 +144,8 @@ export const gitProjects: Project[] = [
       "Assignment",
     ],
     card: card.src,
-    url: "https://growth-mind-gxqn5itz4xv3ambsrhzxiw.streamlit.app/",
+    url: "https://github.com/saeef1/growth-mind/blob/main/password_manager/main.py",
+    deployUrl: "https://growth-mind-gxqn5itz4xv3ambsrhzxiw.streamlit.app//",
   },
   {
     name: "Unit Converter",
@@ -136,15 +154,7 @@ export const gitProjects: Project[] = [
       "A unit converter application that allows users to convert between different measurement units.",
     tag: ["Python", "Unit Converter", "Streamlit", "Utility", "Assignment"],
     card: card2.src,
-    url: "https://growth-mind-jpvn9tkxjn73zqc8pseqtk.streamlit.app/",
-  },
-  {
-    name : "Restraunt Website",
-    id: "restraunt-website",
-    description:
-      "A responsive restaurant website built with Next.js, featuring menu items,Admin dashboard, reservations, and contact information.",
-    tag: ["Next.js", "Restaurant", "Responsive Design", "Side Project"],
-    card: card3.src,
-    url: "https://github.com/Saeef1/restraunt"
+    url: "https://github.com/saeef1/growth-mind/blob/main/unit_convertor/main.py",
+    deployUrl: "https://growth-mind-jpvn9tkxjn73zqc8pseqtk.streamlit.app/",
   }
 ];

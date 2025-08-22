@@ -13,17 +13,17 @@ const Projects = () => {
       >
         <div className="container px-4 mx-auto ">
           <h2 className="text-3xl text-center mb-7 font-bold tracking-tight my-4">
-                    <span className="relative mx-auto z-10 inline-block">
-                      Projects
-                      <Image
-                        alt="Curve"
-                        src={curve}
-                        className="absolute top-[110%] left-2 w-full xl:-m-2"
-                        width={624}
-                        height={28}
-                      />
-                    </span>
-                  </h2>
+            <span className="relative mx-auto z-10 inline-block">
+              Projects
+              <Image
+                alt="Curve"
+                src={curve}
+                className="absolute top-[110%] left-2 w-full xl:-m-2"
+                width={624}
+                height={28}
+              />
+            </span>
+          </h2>
           <div className="flex autoShow flex-wrap gap-10 mb-10">
             {gitProjects.map((Projects) => (
               <>
@@ -49,13 +49,25 @@ const Projects = () => {
                         </span>
                       ))}
                     </div>
-                    <Link
-                      href={Projects.url}
-                      target="_blank"
-                      className="text-primary hover:text-red-600 mt-auto"
-                    >
-                      Github
-                    </Link>
+                    
+                    <div className="flex gap-3 absolute bottom-4 ">
+                      <Link
+                        href={Projects.url}
+                        target="_blank"
+                        className=" hover:text-gray-400 rounded-lg bg-white text-black font-medium py-1 px-2 "
+                      >
+                        Github
+                      </Link>
+                      {Projects.deployUrl && (
+                        <Link
+                          href={Projects.deployUrl}
+                          target="_blank"
+                          className="text-primary font-medium rounded-lg bg-gradient-to-r from-[#9e5dcf] to-[#168fff] bg-[length:200%_200%] bg-left transition-all duration-500 py-1 px-2 hover:bg-right"
+                        >
+                          Live Demo
+                        </Link>
+                      )}
+                    </div>
                   </div>
                 </div>
               </>
